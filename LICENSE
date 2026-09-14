@@ -1,0 +1,65 @@
+MIT License with Third-Party & Research Acknowledgments
+
+Copyright (c) 2026 ayuuXploits. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+===============================================================================
+THIRD-PARTY CREDITS, SCIENTIFIC ACKNOWLEDGMENTS & ATTRIBUTIONS
+===============================================================================
+
+This project ("Fruitfly Chess / Drosophila Connectome Chess") synthesizes original
+gameplay systems, full-stack architecture, and 3D procedural animations developed
+by ayuuXploits with foundational research data, scientific models, and open-source
+engines. Full attribution and gratitude are extended to the following original creators:
+
+1. NeuroMechFly Biomechanical Drosophila Model:
+   - Authors: Victor Lobato-Ríos, Shravan Tata Ramalingasetty, Pembe Gizem Özdil,
+     Jovana Arandelovic, Neval Iyer, Bernhard Schenck, Pavan Ramdya, et al.
+   - Reference: "Neuromechfly, an adult Drosophila melanogaster model for biomechanics
+     and neuroscience." Nature Methods, 19(5), 620-627 (2022).
+   - Attribution: The 3D multi-segment prothoracic leg articulation (coxa, trochanter,
+     femur spindle, high-arched knee condyles, tibial spurs, 5-part tarsus, and claws)
+     and biological foreleg grooming kinematics are adapted from and inspired by the
+     anatomical schematics and kinematic joint limits of the NeuroMechFly framework.
+
+2. FlyWire Whole-Brain Drosophila Connectome:
+   - Authors: Dorkenwald et al., Schlegel et al., FlyWire Consortium,
+     Princeton University & MRC Laboratory of Molecular Biology (Cambridge).
+   - Reference: "Neuronal wiring diagram of an adult brain." Nature (2024).
+   - Attribution: The biological brain graph topology (256-node neuropil subgraphs,
+     sensory projections, mushroom bodies, central complex, and motor control pathways)
+     and synaptic weight distributions are structured based on the FlyWire whole-brain
+     electron microscopy dataset (FAFB).
+
+3. Stockfish Chess Engine:
+   - Authors: The Stockfish Developers (https://stockfishchess.org).
+   - License: GNU General Public License v3.0 (GPLv3).
+   - Attribution: Tactical deep-search evaluation and NNUE positional heuristics are
+     powered by Stockfish open-source engine technology.
+
+4. Python-Chess:
+   - Author: Niklas Fiekas (https://github.com/niklasf/python-chess).
+   - License: GNU General Public License v3.0 (GPLv3).
+   - Attribution: Board state management, legal move generation, and UCI/FEN parsing.
+
+5. Three.js & React Three Fiber Ecosystem:
+   - Authors: Ricardo Cabello (Mr.doob) and Poimandres (https://github.com/pmndrs).
+   - License: MIT License.
+   - Attribution: 3D WebGL rendering, scene graph management, and post-processing.
