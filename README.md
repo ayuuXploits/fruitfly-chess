@@ -34,7 +34,7 @@
 
 <br/>
 
-<img src="./docs/fruitfly.png" width="46%" alt="Connectome Brain" /> &nbsp; <img src="./static/hd_drosophila_fly.png" width="46%" alt="NeuroMechFly 3D Model" />
+<img src="./docs/fruitfly.png" width="46%" alt="Connectome Brain" /> &nbsp; <img src="./docs/fruitfly-chess-hero.jpg" width="46%" alt="NeuroMechFly 3D Model" />
 
 </div>
 
