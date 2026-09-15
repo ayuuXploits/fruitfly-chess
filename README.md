@@ -30,7 +30,7 @@
 
 <br/>
 
-*An anatomically accurate Drosophila melanogaster sits across the chessboard. In real time, the fly breathes, twitches its wings, performs authentic foreleg grooming reflexes, and physically swoops down from its observation perch to grasp chess pieces in its forelegs and fly them to destination squares.*
+*An anatomically accurate Drosophila melanogaster sits across the chessboard on an elevated walnut stool stand. In real time, the fly breathes, twitches its wings, performs authentic foreleg grooming reflexes, and physically swoops down to grasp chess pieces in its forelegs and fly them to destination squares.*
 
 <br/>
 
@@ -43,15 +43,15 @@
 ## ✨ Features
 
 ### 🪰 The Grandmaster Insect Across the Board
-Across the board sits a biological *Drosophila melanogaster* modeled after the scientific **NeuroMechFly** architecture.
+Overlooking the board sits a biological *Drosophila melanogaster* perched on an elevated walnut pedestal, modeled after the scientific **NeuroMechFly** architecture.
 
 | Feature | What it does |
 |---|---|
-| **Autonomous Flight & Move Execution** | When making a move, the fly takes off from its perch, calculates a 3D Catmull-Rom flight spline, dives onto the piece, clamps it in its forelegs, carries it through the air, and drops it onto the target square. |
+| **Autonomous Flight & Move Execution** | When making a move, the fly takes off from its left-side observation stand, calculates a 3D Catmull-Rom flight spline, dives onto the piece, clamps it in its forelegs, carries it through the air, and sets it down on the target square. |
 | **Biological Foreleg Grooming** | In idle state, the fly’s knees splay outward laterally while its 5-segment tarsi cross in front of the proboscis to rub along the **outer (lateral & dorsal) surfaces** in rapid anti-phase strokes (~4.1 Hz). |
 | **Abdominal Respiration** | Realistic biological breathing pumping rhythm expanding and contracting the 7 melanin-banded tergites. |
 | **Wing Kinematics** | High-frequency aerodynamic wing flutter (85 rad/s) during flight and calculation saccades; resting in an authentic posterior V-posture over the abdomen. |
-| **Neural Synaptic Aura** | Cyan synaptic particle glow radiating from the head and compound eyes whenever the fly is evaluating board positions. |
+| **Faceted Ruby Eyes** | Deep crimson compound eyes with high-gloss clearcoat and multifaceted specular reflections. |
 
 ---
 
@@ -60,16 +60,15 @@ Across the board sits a biological *Drosophila melanogaster* modeled after the s
 - **Graph Neural Network (GNN)**: 3-layer Graph Attention Network (GAT) propagating synaptic activation over connectome edge weights to compute move probabilities.
 - **Stockfish 19 NNUE Hybrid Engine**: Combines biological connectome policy heuristics with deep alpha-beta search (depth 14, 3500+ ELO) for tactical mastery.
 - **Trained on Magnus Carlsen Games**: Connectome policy weights fine-tuned on Grandmaster games via imitation learning.
-- **Ultra-Light Quantized Checkpoint**: Symmetric 8-bit quantized weights (**7.1 MB**) that dequantize on boot with near-zero precision loss (<0.6% deviation).
+- **Ultra-Light Quantized Checkpoint**: Symmetric 8-bit quantized weights (**7.12 MB**) that dequantize on boot with near-zero precision loss (<0.6% deviation).
 
 ---
 
 ### 🎮 Interactive 3D WebGL Arena
-- **Full 3D Chessboard & Pieces**: Procedurally rendered low-poly 3D chess pieces with authentic wooden materials, specular rim lighting, and ambient studio occlusion shadows.
-- **Orbit Controls**: Rotate, zoom, and inspect the fly and board from any angle in 3D space with smooth damping.
-- **Move Highlights & Legal Move Guides**: Dynamic glowing cyan markers indicating selectable squares, legal destinations, and check status.
-- **Live Neural Brain Canvas**: Real-time HUD canvas visualizing active synaptic firings, showing how signals propagate through sensory, mushroom body, and motor neuropils during thinking.
-- **Eval Bar & Material Counter**: Real-time evaluation bar and captured piece differential tracker.
+- **Handcrafted Staunton Wooden Pieces**: Procedurally rendered 3D Staunton pieces with authentic blonde boxwood/maple and smoked French walnut wood grain textures.
+- **Floating Glassmorphic HUD Overlays**: Sleek neuro-cyberpunk HUD panels (`rgba(22, 25, 33, 0.75)`) featuring player cards, live connectome firing visualizer, move history, and horizontal eval sparkline.
+- **Move Highlights & Directional Arrow**: Glowing neon cyan square perimeter frames (`#00f0ff`) and directional move arrows indicating the last played move and selectable squares.
+- **Full Viewport 3D Canvas with Orbit Controls**: Inspect the fly, board, and pieces from any angle with smooth damped camera rotation.
 
 ---
 
@@ -78,9 +77,9 @@ Across the board sits a biological *Drosophila melanogaster* modeled after the s
 | Layer | Technology | Purpose |
 |---|---|---|
 | **Frontend Framework** | React 18 + TypeScript + Vite | Reactive UI state and hot-module reloading |
-| **3D Graphics Engine** | Three.js + React Three Fiber (R3F) + Drei | WebGL rendering, lighting, shadows, and orbit controls |
-| **Kinematics Engine** | Procedural Inverse Kinematics (Three.js) | Segmented insect limb joints, spline flight curves & grooming |
-| **Styling** | Tailwind CSS + CSS Glassmorphism | HUD panels, brain canvas overlays, and responsive layout |
+| **3D Graphics Engine** | Three.js + React Three Fiber (R3F) + Drei | WebGL rendering, studio lighting, PBR materials & orbit controls |
+| **Kinematics Engine** | Procedural Inverse Kinematics (Three.js) | Segmented limb articulation, flight splines & grooming reflexes |
+| **Styling** | Tailwind CSS + CSS Glassmorphism | Floating HUD panels, connectome graph, and responsive overlays |
 | **Backend Server** | Python 3.10+ & FastAPI + Uvicorn | High-performance asynchronous REST API |
 | **Graph Neural Network** | PyTorch & PyTorch Geometric (PyG) | Drosophila connectome graph convolutions and GAT layers |
 | **Chess Engine** | python-chess + Stockfish NNUE | FEN/UCI validation, move generation, and tactical evaluation |
@@ -105,6 +104,10 @@ fruitfly-chess/
 │   ├── fly_brain.png               # High-res connectome diagram
 │   ├── realistic_drosophila_body.png
 │   └── realistic_drosophila_wing.png
+├── docs/                           # High-resolution screenshots & showcase
+│   ├── fruitfly-chess-hero.jpg     # Full game UI & 3D arena
+│   ├── fly-moving-piece.jpg        # Fly mid-flight piece carry
+│   └── connectome-neural-hud.jpg   # Connectome visualizer
 └── frontend/                       # React Three Fiber 3D application
     ├── index.html                  # HTML entry point
     ├── package.json                # NPM scripts and dependencies
@@ -113,18 +116,22 @@ fruitfly-chess/
     ├── dist/                       # Pre-built production bundle (ready to run!)
     └── src/
         ├── App.tsx                 # Main application controller
-        ├── main.tsx                # React DOM root
+        ├── main.tsx                # React DOM root & ErrorBoundary
         ├── api.ts                  # REST API communication client
         ├── types.ts                # TypeScript interfaces for game & connectome
         ├── components/
-        │   ├── Fly3D.tsx           # NeuroMechFly 3D model & grooming kinematics
-        │   ├── Board3D.tsx         # 3D chess board & interactive square highlights
-        │   ├── Piece3D.tsx         # Procedural 3D chess pieces
-        │   ├── ChessViewport.tsx   # Canvas, studio lighting, shadows & orbit controls
-        │   ├── BrainCanvas.tsx     # Real-time connectome neural firing visualizer
-        │   ├── EvalBar.tsx         # Evaluation advantage indicator
+        │   ├── Fly3D.tsx           # NeuroMechFly 3D model, grooming kinematics & walnut stand
+        │   ├── Board3D.tsx         # 3D wooden chess board, procedural textures & cyan highlights
+        │   ├── Piece3D.tsx         # Procedural wooden Staunton chess pieces (boxwood & walnut)
+        │   ├── ChessViewport.tsx   # Canvas, studio lighting, hardwood desk & camera controls
+        │   ├── BrainCanvas.tsx     # Real-time multi-layer connectome neural visualizer
+        │   ├── EvalBar.tsx         # Horizontal sparkline evaluation advantage chart
         │   ├── MoveHistory.tsx     # Move notation table with PGN export
-        │   └── Header.tsx          # Status indicators and reset controls
+        │   ├── PlayerCard.tsx      # Drosophila and AI opponent HUD cards with captured pieces
+        │   ├── BrandBadge.tsx      # Top-right branding pill with game timer & move counter
+        │   ├── GameControls.tsx    # Difficulty selector and New Game controls
+        │   ├── ActionButtons.tsx   # Floating Chat and Settings HUD action buttons
+        │   └── Layout.tsx          # Full-viewport canvas + absolute HUD overlay grid
         └── hooks/
             └── useChessGame.ts     # Game state management & API polling hook
 ```
@@ -134,33 +141,44 @@ fruitfly-chess/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **Python 3.10+**
+- **Python 3.10+** (When installing on Windows, make sure to check **☑ Add python.exe to PATH**)
 - **Node.js 18+** *(Optional: only needed if you want to modify and recompile the frontend)*
-- A modern browser with WebGL 2.0 support (Chrome, Firefox, Safari, Edge)
+- A modern browser with WebGL 2.0 support (Chrome, Edge, Firefox, Safari)
 
 ---
 
-### 1. Clone the Repository
+### 1. Get the Code
 
+#### Option A: Clone with Git
 ```bash
 git clone https://github.com/ayuuXploits/fruitfly-chess.git
 cd fruitfly-chess
 ```
 
+#### Option B: Download ZIP (No Git Required)
+1. Click the green **`<> Code`** button at the top of this GitHub repository.
+2. Click **Download ZIP**.
+3. Extract the downloaded `.zip` file.
+4. Open your terminal or Command Prompt inside the extracted `fruitfly-chess` folder.
+
 ---
 
 ### 2. Set Up Python Environment
 
+#### 🪟 Windows (Command Prompt `cmd`)
+Open **Command Prompt (`cmd`)** in the project folder and run each command one by one:
+```cmd
+python -m venv venv
+venv\Scripts\activate.bat
+pip install -r requirements.txt
+```
+
+*(If you use **PowerShell**, enable script execution first with `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`, then activate with `.\venv\Scripts\Activate.ps1`)*
+
+#### 🍎 macOS / 🐧 Linux (Terminal)
 ```bash
-# Create virtual environment
 python3 -m venv venv
-
-# Activate virtual environment
-source venv/bin/activate       # macOS / Linux
-# venv\Scriptsctivate      # Windows (Command Prompt)
-# .env\Scripts\Activate.ps1 # Windows (PowerShell)
-
-# Install dependencies
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -175,11 +193,13 @@ python app.py
 The server will start at:
 👉 **`http://127.0.0.1:8000`**
 
+Open that URL in your browser to play!
+
 ---
 
 ### 4. Frontend Development (Optional)
 
-If you wish to edit the 3D models, shaders, or UI components:
+If you wish to customize the 3D models, shaders, or HUD components:
 
 ```bash
 cd frontend
