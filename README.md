@@ -173,6 +173,7 @@ Open **Command Prompt (`cmd`)** in the project folder and run each command one b
 python -m venv venv
 venv\Scripts\activate.bat
 pip install -r requirements.txt
+
 ```
 
 *(If you use **PowerShell**, enable script execution first with `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`, then activate with `.\venv\Scripts\Activate.ps1`)*
