@@ -134,7 +134,6 @@ fruitfly-chess/
         │   └── Layout.tsx          # Full-viewport canvas + absolute HUD overlay grid
         └── hooks/
             └── useChessGame.ts     # Game state management & API polling hook
-
 ```
 
 ---
@@ -154,7 +153,6 @@ fruitfly-chess/
 ```bash
 git clone https://github.com/ayuuXploits/fruitfly-chess.git
 cd fruitfly-chess
-
 ```
 
 #### Option B: Download ZIP (No Git Required)
@@ -173,7 +171,6 @@ Open **Command Prompt (`cmd`)** in the project folder and run each command one b
 python -m venv venv
 venv\Scripts\activate.bat
 pip install -r requirements.txt
-
 ```
 
 *(If you use **PowerShell**, enable script execution first with `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`, then activate with `.\venv\Scripts\Activate.ps1`)*
