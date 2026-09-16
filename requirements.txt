@@ -1,6 +1,7 @@
-torch>=2.0.0
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+torch>=2.0.0+cpu
 torch-geometric>=2.5.0
-python-chess>=1.999
 chess>=1.10.0
 networkx>=3.0
 pandas>=2.0.0
@@ -11,4 +12,3 @@ uvicorn>=0.28.0
 pydantic>=2.0.0
 navis>=1.10.0
 caveclient>=8.0.0
-
