@@ -153,6 +153,7 @@ fruitfly-chess/
 ```bash
 git clone https://github.com/ayuuXploits/fruitfly-chess.git
 cd fruitfly-chess
+
 ```
 
 #### Option B: Download ZIP (No Git Required)
