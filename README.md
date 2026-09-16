@@ -26,7 +26,7 @@
 [![Three.js](https://img.shields.io/badge/Three.js-R3F-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org)
 [![Stockfish 19](https://img.shields.io/badge/Stockfish-3500+_ELO-1572B6?style=for-the-badge)](https://stockfishchess.org)
 
-[**🐛 Report Bug**](https://github.com/ayuuXploits/fruitfly-chess/issues/new?labels=bug&title=%5BBug%5D+) &nbsp;·&nbsp; [**✨ Request Feature**](https://github.com/ayuuXploits/fruitfly-chess/issues/new?labels=enhancement&title=%5BFeature%5D+) &nbsp;·&nbsp; [**📄 Read License**](./LICENSE)
+[**📖 Try It**](https://study-buddy-3xji.onrender.com/) &nbsp;·&nbsp; [**🐛 Report Bug**](https://github.com/ayuuXploits/fruitfly-chess/issues/new?labels=bug&title=%5BBug%5D+) &nbsp;·&nbsp; [**✨ Request Feature**](https://github.com/ayuuXploits/fruitfly-chess/issues/new?labels=enhancement&title=%5BFeature%5D+) &nbsp;·&nbsp; [**📄 Read License**](./LICENSE)
 
 <br/>
 
