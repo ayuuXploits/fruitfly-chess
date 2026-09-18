@@ -134,6 +134,7 @@ fruitfly-chess/
         │   └── Layout.tsx          # Full-viewport canvas + absolute HUD overlay grid
         └── hooks/
             └── useChessGame.ts     # Game state management & API polling hook
+
 ```
 
 ---
