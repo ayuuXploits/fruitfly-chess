@@ -11,7 +11,6 @@
 *.scss linguist-detectable=false
 frontend/src/** linguist-detectable=false
 frontend/src/** linguist-vendored
-static/index.html linguist-detectable=false
 static/index.html linguist-vendored
 static/OBJ\ Files/** linguist-detectable=false
 static/OBJ\ Files/** linguist-vendored
