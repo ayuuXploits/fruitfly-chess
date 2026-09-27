@@ -1,0 +1,14 @@
+# ─── GitHub Linguist Overrides ───
+# Exclude TypeScript and TSX files from repository language statistics
+# so that Python remains the primary language on GitHub.
+*.ts linguist-detectable=false
+*.tsx linguist-detectable=false
+*.d.ts linguist-detectable=false
+*.d.ts linguist-vendored
+# Ignore entire frontend directory in GitHub language calculation
+frontend/** linguist-detectable=false
+frontend/** linguist-vendored
+# Ignore bundled / static distribution files and datasets
+static/** linguist-vendored
+*.pgn linguist-detectable=false
+*.csv linguist-detectable=false
