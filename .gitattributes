@@ -8,7 +8,6 @@
 *.cjs linguist-detectable=false
 *.css linguist-detectable=false
 *.scss linguist-detectable=false
-frontend/src/** linguist-detectable=false
 frontend/src/** linguist-vendored
 static/index.html linguist-vendored
 static/OBJ\ Files/** linguist-detectable=false
