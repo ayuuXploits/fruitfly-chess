@@ -6,7 +6,6 @@
 *.jsx linguist-detectable=false
 *.mjs linguist-detectable=false
 *.cjs linguist-detectable=false
-*.json linguist-detectable=false
 *.css linguist-detectable=false
 *.scss linguist-detectable=false
 frontend/src/** linguist-detectable=false
