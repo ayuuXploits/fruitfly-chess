@@ -1,14 +1,37 @@
-# ─── GitHub Linguist Overrides ───
-# Exclude TypeScript and TSX files from repository language statistics
-# so that Python remains the primary language on GitHub.
 *.ts linguist-detectable=false
 *.tsx linguist-detectable=false
 *.d.ts linguist-detectable=false
 *.d.ts linguist-vendored
-# Ignore entire frontend directory in GitHub language calculation
-frontend/** linguist-detectable=false
-frontend/** linguist-vendored
-# Ignore bundled / static distribution files and datasets
+*.js linguist-detectable=false
+*.jsx linguist-detectable=false
+*.mjs linguist-detectable=false
+*.cjs linguist-detectable=false
+*.json linguist-detectable=false
+*.css linguist-detectable=false
+*.scss linguist-detectable=false
+frontend/src/** linguist-detectable=false
+frontend/src/** linguist-vendored
+static/index.html linguist-detectable=false
+static/index.html linguist-vendored
+static/OBJ\ Files/** linguist-detectable=false
+static/OBJ\ Files/** linguist-vendored
 static/** linguist-vendored
+frontend/dist/** linguist-vendored
+frontend/dist/** linguist-detectable=false
+*.obj linguist-detectable=false
+*.glb linguist-detectable=false
+*.pt linguist-detectable=false
 *.pgn linguist-detectable=false
 *.csv linguist-detectable=false
+*.txt linguist-detectable=false
+*.png linguist-detectable=false
+*.jpg linguist-detectable=false
+*.jpeg linguist-detectable=false
+*.md linguist-documentation
+LICENSE linguist-documentation
+*.py linguist-detectable=true
+*.py linguist-language=Python
+*.ipynb linguist-detectable=true
+*.ipynb linguist-language="Jupyter Notebook"
+frontend/index.html linguist-detectable=true
+frontend/index.html linguist-language=HTML
