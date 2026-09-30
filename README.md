@@ -138,6 +138,7 @@ fruitfly-chess/
         └── hooks/
             └── useChessGame.ts     # Game state management & API polling hook
 
+
 ```
 
 ---
