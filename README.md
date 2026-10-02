@@ -193,6 +193,7 @@ pip install -r requirements.txt
 
 ```bash
 python app.py
+
 ```
 
 The server will start at:
