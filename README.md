@@ -213,6 +213,7 @@ cd frontend
 npm install
 npm run dev      # Starts Vite dev server with hot reload at http://localhost:5173
 npm run build    # Compiles production bundle to frontend/dist/
+
 ```
 
 ---
