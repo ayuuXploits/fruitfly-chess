@@ -77,7 +77,7 @@ Overlooking the board sits a biological *Drosophila melanogaster* perched on an 
 ## 🛠️ Tech Stack
 
 | Layer | Technology | Purpose |
-|---|---|---|
+|--------|---|---|
 | **Frontend Framework** | React 18 + TypeScript + Vite | Reactive UI state and hot-module reloading |
 | **3D Graphics Engine** | Three.js + React Three Fiber (R3F) + Drei | WebGL rendering, studio lighting, PBR materials & orbit controls |
 | **Kinematics Engine** | Procedural Inverse Kinematics (Three.js) | Segmented limb articulation, flight splines & grooming reflexes |
