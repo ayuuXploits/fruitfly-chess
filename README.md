@@ -48,7 +48,7 @@
 Overlooking the board sits a biological *Drosophila melanogaster* perched on an elevated walnut pedestal, modeled after the scientific **NeuroMechFly** architecture.
 
 | Feature | What it does |
-|---|---|
+|----|---|
 | **Autonomous Flight & Move Execution** | When making a move, the fly takes off from its left-side observation stand, calculates a 3D Catmull-Rom flight spline, dives onto the piece, clamps it in its forelegs, carries it through the air, and sets it down on the target square. |
 | **Biological Foreleg Grooming** | In idle state, the fly’s knees splay outward laterally while its 5-segment tarsi cross in front of the proboscis to rub along the **outer (lateral & dorsal) surfaces** in rapid anti-phase strokes (~4.1 Hz). |
 | **Abdominal Respiration** | Realistic biological breathing pumping rhythm expanding and contracting the 7 melanin-banded tergites. |
